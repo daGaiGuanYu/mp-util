@@ -1,3 +1,1 @@
-module.exports = {
-  getSearchInputPosition: require('./lib/get-search-input-position/index')
-}
+console.error('不要直接引入这个文件，需要哪个工具直接引用工具所在的文件夹名字！')

@@ -1,0 +1,18 @@
+{
+  "name": "mp-util",
+  "version": "1.0.1",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daGaiGuanYu/mp-util.git"
+  },
+  "keywords": [
+    "mini-programe"
+  ],
+  "author": "gy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daGaiGuanYu/mp-util/issues"
+  },
+  "homepage": "https://github.com/daGaiGuanYu/mp-util#readme"
+}
