@@ -1,1 +1,6 @@
-console.error('不要直接引入这个文件，需要哪个工具直接引用工具所在的文件夹名字！')
+module.exports = {
+  getSearchInputPosition: require('./lib/get-search-input-position/index'),
+  WxLogin: require('./lib/login/index'),
+  mixin: require('./lib/mixin/index'),
+  request: require('./lib/request/index')
+}
