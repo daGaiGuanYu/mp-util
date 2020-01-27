@@ -1,5 +1,5 @@
 module.exports = {
-  getSearchInputPosition: require('./lib/get-search-input-position/index'),
+  getTitlePosition: require('./lib/get-title-position/index'),
   Mixin: require('./lib/mixin/index'),
   Request: require('./lib/request/index')
 }
