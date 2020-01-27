@@ -6,7 +6,7 @@ Page = function(...optionList){
 
   if(option.data){
     if(option.data.constructor == Function)
-      base.data = base.data()
+      option.data = option.data()
     else
       throw Error('data 应该是个函数！')
   }
