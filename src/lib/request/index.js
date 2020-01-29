@@ -1,5 +1,5 @@
 module.exports = class Request{
-  constructor(baseUrl, header, around, aroundErr){
+  constructor(baseUrl, around, aroundErr, header){
     this.baseUrl = baseUrl
     this.header = header
     this.around = around
