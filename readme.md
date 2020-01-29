@@ -1,4 +1,5 @@
 # 微信小程序工具集
 
-## 函数
-+ getSearchInput
+## 列表
++ 自定义标题框位置
++ request
