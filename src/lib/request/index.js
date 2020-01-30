@@ -4,7 +4,7 @@ module.exports = class Request{
   // 其余响应交给 handleError 处理
   constructor({ baseUrl, beforeSent, handleError, handleResult, header }){
     this.baseUrl = baseUrl
-    this.header = header
+    this.header = header||{}
     this.beforeSent = beforeSent
     this.hanldeError = handleError
     this.handleResult = handleResult
