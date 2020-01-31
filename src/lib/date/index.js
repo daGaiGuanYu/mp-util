@@ -1,4 +1,4 @@
-function getTxt(date=new Date(), [dateSplit='-', split='-', timeSplit=':']=[], withSecond){
+function getTxt(date=new Date(), [dateSplit='-', split=' ', timeSplit=':']=[], withSecond){
   if(date.constructor != Date)
     throw Error('date 必须是个 Date 对象，任何包裹对象都不好使！')
   let year = date.getFullYear()
