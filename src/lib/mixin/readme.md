@@ -1,4 +1,5 @@
 # mp 混入
+r 了狗了，Page 也可以用 behavior
 
 ## 特性
 + 简单
