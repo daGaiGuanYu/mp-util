@@ -18,7 +18,7 @@ module.exports = class Request{
       if(query){
         url += '?'
         for(let key in query)
-          url += key + query[key]
+          url += key + '=' + query[key]
       }
     }
     return new Promise( async (resolve, reject) => {
