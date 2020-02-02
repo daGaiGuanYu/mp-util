@@ -11,6 +11,7 @@ module.exports = class Request{
   }
 
   request(url, data, method, header){
+    header = Object.assign({}, this.header, header) // 这个顺序保证 header 覆盖 this.header 而不改变
     if(url.constructor != String){
       let query = url.query
       url = url.url
@@ -20,13 +21,13 @@ module.exports = class Request{
           url += key + query[key]
       }
     }
-    return new Promise( (resolve, reject) => {
+    return new Promise( async (resolve, reject) => {
       if(this.beforeSent)
-        this.beforeSent({ url, data, method, header })
+        await this.beforeSent({ url, data, method, header })
       wx.request({
         url: this.baseUrl + url,
         data,
-        header: Object.assign({}, this.header, header), // 这个顺序保证 header 覆盖 this.header 而不改变
+        header,
         method,
         success: res => {
           if(this.handleResult)
