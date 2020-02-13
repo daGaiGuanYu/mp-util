@@ -1,6 +1,6 @@
 {
   "name": "mp-util",
-  "version": "1.1.27",
+  "version": "1.1.28",
   "main": "src/index.js",
   "repository": {
     "type": "git",
